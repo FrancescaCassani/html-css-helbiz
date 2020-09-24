@@ -1,0 +1,111 @@
+/* Specifiche techiche sito */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  background: #fff;
+  color: #000;
+}
+
+/* Utilities */
+.container {
+  width: 1350px;
+  max-width: 100%;
+  margin: 0 auto;
+  /* Debug space */
+  margin-bottom: 15px;
+}
+
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.float-left {
+  float: left;
+}
+
+/* Tipography */
+.text-center {
+  text-align: center;
+}
+
+/* Menu */
+.text-inline li {
+ display: inline-block;
+ padding: 0 10px;
+}
+
+/* Header */
+.main-header {
+  background: #fff;
+  height: 80px;
+}
+
+.menu-nav {
+  font-size: 12px;
+  line-height: 80px;
+  text-transform: uppercase;
+}
+
+.menu-nav img {
+  vertical-align: middle;
+}
+
+.menu-nav li a {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.menu-nav .header-logo {
+  width: 15%;
+}
+
+.menu-nav .header-nav {
+  width: 85%;
+  text-align: right;
+}
+
+/* Jumbotron */
+.jumbotron {
+  position: relative;
+  height: 750px;
+  background-image: url("../img/hero-bg.jpg");
+  background-size: 1350px;
+  background-size: cover;
+}
+
+.text-jumbotron {
+  position: absolute;
+  left: 675px;
+  top: 30%;
+}
+
+.text-jumbotron h1 {
+  font-size: 58px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.text-jumbotron p {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.text-jumbotron .loghi {
+  display: inline-block;
+}
