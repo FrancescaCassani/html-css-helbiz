@@ -21,6 +21,7 @@ body {
   margin-bottom: 15px;
 }
 
+
 .container::after {
   content: "";
   display: table;
@@ -36,20 +37,37 @@ body {
 .float-left {
   float: left;
 }
-
-.w-45 {
-  width: 45%;
+.float-right {
+  float: right;
 }
 
-/* Tipography */
+.w-50 {
+  width: 50%;
+}
+
 .text-center {
   text-align: center;
 }
 
-/* Menu */
-.text-inline li {
- display: inline-block;
- padding: 0 10px;
+.text-right {
+  text-align: right;
+}
+
+/* Tipography */
+
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: white;
+}
+
+.btn-blue {
+  color: blue;
 }
 
 /* Header */
@@ -57,7 +75,7 @@ body {
   background: #fff;
   height: 80px;
 }
-
+/* Menu */
 .menu-nav {
   font-size: 12px;
   line-height: 80px;
@@ -66,6 +84,11 @@ body {
 
 .menu-nav img {
   vertical-align: middle;
+}
+
+.text-inline li {
+ display: inline-block;
+ padding: 0 10px;
 }
 
 .menu-nav li a {
@@ -80,13 +103,73 @@ body {
 
 .menu-nav .header-nav {
   width: 85%;
-  text-align: right;
+}
+
+.main-header .header-nav ul .hidden {
+  display: none;
+}
+
+
+/* MEDIA XS HEADER */
+@media screen and (max-width: 767px) {
+  .main-header .header-nav ul li {
+    display: none;
+  }
+  .main-header .header-nav ul .hidden {
+    display: inline-block;
+  }
+}
+
+/* MEDIA MD HEADER */
+@media screen and (min-width: 768px) {
+  .main-header .header-nav ul li {
+    display: none;
+  }
+  .main-header .header-nav ul .hidden {
+    display: inline-block;
+  }
+}
+
+/* MEDIA LG HEADER */
+@media screen and (min-width: 992px) {
+  .main-header .header-nav ul li {
+    display: inline-block;
+  }
+  .main-header .header-nav ul .hidden {
+    display: none;
+  }
+}
+
+
+/* MEDIA XS JUMBOTRON */
+@media screen and (max-width: 767px) {
+  .jumbotron .text-jumbotron {
+    position: absolute;
+    left: 0;
+  }
+}
+
+/* MEDIA MD JUMBOTRON */
+@media screen and (min-width: 768px) {
+  .jumbotron .text-jumbotron {
+    position: absolute;
+    left: 0;
+  }
+}
+
+/* MEDIA LG JUMBOTRON */
+@media screen and (min-width: 992px) {
+  .jumbotron .text-jumbotron {
+    position: absolute;
+    left: 675px;
+    top: 30%;
+  }
 }
 
 /* Jumbotron */
 .jumbotron {
   position: relative;
-  height: 750px;
+  height: 700px;
   background-image: url("../img/hero-bg.jpg");
   background-size: 1350px;
   background-size: cover;
@@ -111,41 +194,106 @@ body {
 }
 
 .text-jumbotron .loghi {
+  margin: 0 15px;
   display: inline-block;
 }
 
-/* Main */
-main {
-  height: 600px;
-}
-
-main .container {
-  position: relative;
-}
-
-main h2 {
-  padding: 5px;
-}
-
-main .box-1,
-main .box-2 {
+/* Main content - Prodotti */
+.row .product {
   margin-top: 30px;
-  margin-left: 5%;
   line-height: 40px;
   background: #fafafa;
 }
 
-main img {
+.row img {
   width: 200px;
   height: 350px;
 }
 
-main .more box-1 a {
-  position: absolute;
-  top: 17%;
+/* How-Work */
+.how-work {
+  height: 550px;
+  margin-bottom: 200px;
+  background-image: url("../img/helbiz-banner.jpg");
+  background-size: 1350px;
+  background-size: cover;
 }
 
-main .soon box-2 a {
-  position: absolute;
-  top: 17%;
+.how-work .col-left,
+.how-work .col-right {
+  margin-top: 700px;
+}
+
+.how-work .col-left {
+  text-align: right;
+}
+.how-work .col-left .text {
+  display: inline-block;
+  text-align: left;
+}
+
+.how-work .col-left .text h3 {
+  font-size: 30px;
+}
+
+.how-work h3,
+.how-work h4 {
+  font-weight: 600;
+}
+
+.how-work .col-right .text {
+  padding-top: 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .only-desktop {
+    display: block;
+    margin-top: 150px;
+  }
+  .how-work {
+    background-position: center;
+  }
+  .how-work .phone {
+    margin-top: 100px;
+    text-align: center;
+  }
+  .how-work .phone img { /* l'immagine è un elmento inline-bloche che segue il flusso */
+    max-height: 600px; /* aggiungo un terzo ai 400px già indicati */
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .how-work {
+    margin-bottom: 300px;
+  }
+  .how-work .col-left,
+  .how-work .col-right {
+    margin-top: 650px;
+  }
+}
+/* Smart mobility */
+.smart-mobility {
+  height: 450px;
+  background-image: url("../img/scooter-bg.jpg");
+  background-size: cover;
+  background-position: left center;
+}
+
+.smart-mobility h1 {
+  font-size: 58px;
+  color: white;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+.smart-mobility p {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* The app */
+.box-1 img {
+  width:300px;
+  height: 350px;
 }

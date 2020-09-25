@@ -11,39 +11,51 @@
   <body>
 
   <!-- HEADER -->
+    <!-- Logo -->
     <header class="main-header">
       <div class="container">
-        <nav class="menu-nav clearfix">
-          <div class="header-logo float-left">
+        <nav class="menu-nav">
+          <div class="header-logo col-xs-6 col-lg-3">
             <img src="./img/helbiz-logo.svg" alt="logo">
           </div>
 
-          <!-- Barra navigazione -->
-          <div class="header-nav float-left">
-            <ul class="text-inline">
+          <!-- Lista barra bottom -->
+          <div class="header-nav col-xs-6 col-lg-9">
+            <ul class="text-inline text-right">
+              <ul class="hidden">
+                <i class="fa fa-bars"></i>
+              </ul>
               <li>
-                <a href="#">HELBIZGO</a>
+                <a href="#">Helbizgo
+                </a>
               </li>
               <li>
-                <a href="#">HELBIZCAR</a>
+                <a href="#">Helbizcar
+              </a>
               </li>
               <li>
-                <a href="#">HELBIZAIR</a>
+                <a href="#">Helbizair
+                </a>
               </li>
               <li>
-                <a href="#">ABOUT</a>
+                <a href="#">About
+                </a>
               </li>
               <li>
-                <a href="#">CITIES</a>
+                <a href="#">Cities
+                </a>
               </li>
               <li>
-                <a href="#">CAREERS</a>
+                <a href="#">Careers
+                </a>
               </li>
               <li>
-                <a href="#">SHOP</a>
+                <a href="#">Shop
+                </a>
               </li>
               <li>
-                <a href="#">ENG</a>
+                <a href="#">Eng
+                </a>
               </li>
               <li>
                 <a href="#">ITA</a>
@@ -57,51 +69,114 @@
       </div>
     </header>
 
-      <!-- Jumbotron -->
-    <div class="jumbotron">
-      <div class="text-jumbotron text-center">
-        <h1>Shared Mobility of Tomorrow</h1>
-        <p>Bringing the future of shared mobility to the streets of the world</p>
+    <!-- Jumbotron -->
+    <div class="jumbotron col-xs-12">
+      <div class="container">
+        <div class="text-jumbotron text-center">
+          <h1>Shared Mobility of Tomorrow</h1>
+          <p>Bringing the future of shared mobility to the streets of the world</p>
 
-        <div class="loghi">
-          <img src="./img/app-store-badge.svg" alt="apple">
+          <div class="loghi">
+            <img src="./img/app-store-badge.svg" alt="apple">
+          </div>
+
+          <div class="loghi">
+            <img src="./img/google-play-badge.svg" alt="google">
+          </div>
         </div>
 
-        <div class="loghi">
-          <img src="./img/google-play-badge.svg" alt="google">
-        </div>
       </div>
+
     </div>
 
     <!-- MAIN CONTENT -->
+    <!-- Prodotti -->
     <main>
-      <section class="container clearfix">
-        <div class="box-1 w-45 float-left text-center">
-          <h2>HelbizGO</h2>
-          <p>Next generation of electric city bikes</p>
-          <div class="more">
-            <a href="#">Learn More</a>
-          </div>
-          <img src="./img/go-segway.jpg" alt="">
-        </div>
-
-        <div class="box-2 w-45 float-left text-center">
-          <h2>HelbizBike</h2>
-          <p>Seamless E-Scooter sharing globally</p>
-            <div class="soon">
-              <a href="#">Coming soon</a>
+      <section class="row">
+        <div class="container">
+          <div class="product w-50 col-xs-12 text-center">
+            <h2>HelbizGO</h2>
+            <p>Next generation of electric city bikes</p>
+            <div class="more">
+              <a class="btn btn-blue" href="#">Learn More</a>
             </div>
-          <img src="./img/bike.jpg" alt="">
+            <img src="./img/go-segway.jpg" alt="prodotto1">
+          </div>
+          <div class="row clearfix">
+            <div class="product w-50 col-xs-12 text-center">
+              <h2>HelbizBike</h2>
+              <p>Seamless E-Scooter sharing globally</p>
+                <div class="soon">
+                  <a class="btn btn-blue" href="#">Coming soon</a>
+                </div>
+              <img src="./img/bike.jpg" alt="prodotto2">
+            </div>
+          </div>
         </div>
+      </section>
 
+      <!-- How work -->
+      <section class="how-work">
+        <div class="container">
+          <div class="col-xs-6 col-lg-4 col-left">
+            <div class="text">
+            <h3>How does <br> Helbiz work?</h3>
+            </div>
+          </div>
+
+          <div class="col-lg-4 only-desktop">
+            <div class="phone">
+              <img src="./img/iphone.png" alt="phone">
+            </div>
+          </div>
+
+          <div class="col.xs.6 col-lg-4 col-right">
+            <div class="text">
+              <h4>Step 1</h4>
+              <small>Leave curbside when finished</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Smart mobility -->
+      <section class="smart-mobility">
+        <div class="container">
+          <div class="text-smart w-50 float-right text-center">
+            <h1>Smart mobility on two Wheels</h1>
+            <p>A cleaner and more convenient alternative to get around your city</p>
+            <a class="btn" href="#">Learn more ></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- The app -->
+      <section class="app">
+        <div class="container">
+          <div class="box-1 col-lg-6 text-center">
+            <h3>Get the App</h3>
+            <p>Download the app and start riding today</p>
+            <a class="btn" href="#">IOS ></a>
+            <a class="btn" href="#">Android></a>
+            <img src="./img/helbiz-app.png" alt="app">
+          </div>
+
+          <div class="box-2 col-lg-6 text-center">
+            <h3>Find us around</h3>
+            <p>Find us around the globe</p>
+            <a class="btn" href="#">Our city ></a>
+            <img src="./img/cities.jpg" alt="cities">
+          </div>
+
+
+        </div>
 
       </section>
+
+
+
+
     </main>
-
-
-
-
-
 
   </body>
 </html>
