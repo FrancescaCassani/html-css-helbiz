@@ -141,31 +141,6 @@ body {
 }
 
 
-/* MEDIA XS JUMBOTRON */
-@media screen and (max-width: 767px) {
-  .jumbotron .text-jumbotron {
-    position: absolute;
-    left: 0;
-  }
-}
-
-/* MEDIA MD JUMBOTRON */
-@media screen and (min-width: 768px) {
-  .jumbotron .text-jumbotron {
-    position: absolute;
-    left: 0;
-  }
-}
-
-/* MEDIA LG JUMBOTRON */
-@media screen and (min-width: 992px) {
-  .jumbotron .text-jumbotron {
-    position: absolute;
-    left: 675px;
-    top: 30%;
-  }
-}
-
 /* Jumbotron */
 .jumbotron {
   position: relative;
@@ -198,6 +173,32 @@ body {
   display: inline-block;
 }
 
+/* MEDIA XS JUMBOTRON */
+@media screen and (max-width: 767px) {
+  .jumbotron .text-jumbotron {
+    position: absolute;
+    left: 0;
+  }
+}
+
+/* MEDIA MD JUMBOTRON */
+@media screen and (min-width: 768px) {
+  .jumbotron .text-jumbotron {
+    position: absolute;
+    left: 0;
+  }
+}
+
+/* MEDIA LG JUMBOTRON */
+@media screen and (min-width: 992px) {
+  .jumbotron .text-jumbotron {
+    position: absolute;
+    left: 675px;
+    top: 30%;
+  }
+}
+
+
 /* Main content - Prodotti */
 .row .product {
   margin-top: 30px;
@@ -212,6 +213,7 @@ body {
 
 /* How-Work */
 .how-work {
+  position: relative;
   height: 550px;
   margin-bottom: 200px;
   background-image: url("../img/helbiz-banner.jpg");
@@ -245,6 +247,41 @@ body {
   padding-top: 10px;
 }
 
+/* MEDIA XS HOW WORK */
+@media screen and (max-width: 767px) {
+  .only-desktop {
+    display: none;
+  }
+  .how-work .col-left .text {
+    position: absolute;
+    left: 150px;
+    bottom: 300px;
+  }
+  .how-work .col-right .text {
+    position: absolute;
+    left: 150px;
+    bottom: 250px;
+  }
+}
+
+/* MEDIA MD HOW WORK */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .only-desktop {
+    display: none;
+  }
+  .how-work .col-left .text {
+    position: absolute;
+    left: 150px;
+    bottom: 300px;
+  }
+  .how-work .col-right .text {
+    position: absolute;
+    left: 150px;
+    bottom: 250px;
+  }
+}
+
+/* MEDIA LG HOW WORK */
 @media screen and (min-width: 992px) {
   .only-desktop {
     display: block;
@@ -261,7 +298,15 @@ body {
     max-height: 600px; /* aggiungo un terzo ai 400px già indicati */
     max-width: 100%;
   }
+  .how-work {
+    margin-bottom: 300px;
+  }
+  .how-work .col-left,
+  .how-work .col-right {
+    margin-top: 650px;
+  }
 }
+
 @media screen and (min-width: 1200px) {
   .how-work {
     margin-bottom: 300px;
@@ -273,6 +318,7 @@ body {
 }
 /* Smart mobility */
 .smart-mobility {
+  position: relative;
   height: 450px;
   background-image: url("../img/scooter-bg.jpg");
   background-size: cover;
@@ -290,6 +336,50 @@ body {
   font-size: 14px;
   color: white;
   margin-bottom: 15px;
+}
+
+/* MEDIA XS SMART MOBILITY */
+@media screen and (max-width: 767px) {
+  .smart-mobility .text-smart {
+    position: absolute;
+    left: 170px;
+  }
+  .smart-mobility h1 {
+    font-size: 58px;
+    color: white;
+    margin-top: 50px;
+  }
+  .smart-mobility p,
+  .smart-mobility a {
+    font-size: 18px;
+  }
+}
+
+/* MEDIA MD SMART MOBILITY */
+@media screen and (min-width: 768px) {
+  .smart-mobility .text-smart {
+    position: absolute;
+    left: 170px;
+    display: inline-block;
+  }
+  .smart-mobility h1 {
+    font-size: 58px;
+    color: white;
+    margin-top: 50px;
+  }
+  .smart-mobility p,
+  .smart-mobility a {
+    font-size: 18px;
+  }
+}
+
+/* MEDIA LG SMART MOBILITY */
+@media screen and (min-width: 992px) {
+  .smart-mobility .text-smart {
+    position: absolute;
+    left: 675px;
+    top: 15%;
+  }
 }
 
 /* The app */
