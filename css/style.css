@@ -17,18 +17,18 @@ body {
   width: 1350px;
   max-width: 100%;
   margin: 0 auto;
-  /* Debug space */
   margin-bottom: 15px;
 }
 
-
-.container::after {
-  content: "";
-  display: table;
-  clear: both;
+.small-container {
+  width: 1350px;
+  height: 800px
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 15px;
 }
 
-.clearfix::after {
+.container::after {
   content: "";
   display: table;
   clear: both;
@@ -202,6 +202,7 @@ body {
 /* Main content - Prodotti */
 .row .product {
   margin-top: 30px;
+  border-right: 20px solid white;
   line-height: 40px;
   background: #fafafa;
 }
@@ -316,6 +317,7 @@ body {
     margin-top: 650px;
   }
 }
+
 /* Smart mobility */
 .smart-mobility {
   position: relative;
@@ -383,7 +385,34 @@ body {
 }
 
 /* The app */
-.box-1 img {
-  width:300px;
+.app {
+  position: relative;
+}
+
+.app .box-1,
+.app .box-2 {
+  background-color: #2B3856;
+  height: 490px;
+}
+.app .box-1 {
+ border-right: 20px solid white;
+}
+/* Immagini */
+.small-container .box-1 img {
+  width: 600px;
   height: 350px;
+}
+
+.small-container .box-2 {
+  background-image: url("../img/cities.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Testo */
+.app h2,
+.app h3,
+.app .btn {
+  margin-top: 20px;
+  color: white;
 }
