@@ -1,10 +1,4 @@
 /* Specifiche techiche sito */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: sans-serif;
   font-size: 16px;
@@ -22,13 +16,18 @@ body {
 
 .small-container {
   width: 1350px;
-  height: 800px
   max-width: 100%;
   margin: 0 auto;
   margin-bottom: 15px;
 }
 
-.container::after {
+.small-container-footer {
+  width: 1000px;
+}
+
+.container::after,
+.small-container::after,
+.small-container-footer::after  {
   content: "";
   display: table;
   clear: both;
@@ -37,6 +36,7 @@ body {
 .float-left {
   float: left;
 }
+
 .float-right {
   float: right;
 }
@@ -53,6 +53,14 @@ body {
   text-align: right;
 }
 
+.no-list {
+  list-style: none;
+  text-decoration: none;
+}
+
+.inline-block {
+  display: inline-block;
+}
 /* Tipography */
 
 
@@ -295,7 +303,7 @@ body {
     margin-top: 100px;
     text-align: center;
   }
-  .how-work .phone img { /* l'immagine è un elmento inline-bloche che segue il flusso */
+  .how-work .phone img { /* l'immagine è un elmento inline-block che che segue il flusso */
     max-height: 600px; /* aggiungo un terzo ai 400px già indicati */
     max-width: 100%;
   }
@@ -415,21 +423,22 @@ body {
 
 /* HELBIZ FAMILIY */
 .family {
-  position: relative;
   height: 550px;
-  margin-top: 550px;
   margin-bottom: 45px;
   background-image: url("../img/social-banner.jpg");
   background-size: cover;
   background-position: center;
 }
 
+.family .container {
+  position: relative;
+}
+
 .family .icone {
   position: absolute;
-  top: 200px;
-  left: 800px;
+  top: 225px;
+  left: 600px;
   width: 300px;
-  height: 150px;
   background: white;
 }
 
@@ -443,21 +452,61 @@ body {
 }
 
 /* FOOTER */
-footer {
-  width: 100%;
-  height: 750px;
+
+.main-footer {
+  margin-top: 30px;
   background: black;
   color: white;
+  padding: 60px 20px;
 }
 
-
-.finalbox img {
-  vertical-align: middle;
+.footer-up,
+.footer-middle {
+  padding-bottom: 20px;
+  border-bottom: 1px solid gray
 }
 
-.finalbox .col- li {
-  padding: 0 10px;
-  text-align: left;
-  list-style: none;
-  line-height: 30px;
+.footer h4 {
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+.footer-up li {
+  padding: 12px 0;
+}
+
+.footer-uo img {
+  padding: 16px 0 35px 0;
+}
+
+.footer-up li a {
+  color: grey;
+  padding: 16px 0;
+  text-decoration: none;
+}
+
+.footer-middle {
+  padding-top: 22px;
+}
+
+.footer-middle a {
+  display: inline-block;
+  padding: 22px 0;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-middle a i {
+  padding: 0 8px;
+  font-size: 18px
+}
+
+.footer-down {
+  padding: 22px 0;
+}
+
+.footer-down img {
+  margin: 10px 5px 20px;
+  border: solid 1px white;
+  border-radius: 10px
 }
